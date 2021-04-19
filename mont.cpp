@@ -130,7 +130,7 @@ void Mont::on_StartButton_clicked()
             break;
     }
     for (i = 0; i < n; i++) {
-            if (X1[i] > X2[i]) r++;
+            if (X2[i] > X1[i]) r++;
         }
     double result = double(r)/n;
     ui->ResultLab->setText(QString::number(result,'g',16));
